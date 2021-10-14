@@ -10,6 +10,7 @@
 Cheng recommends keeping an eye on [NeurIPS tutorials](https://blog.neurips.cc/2021/06/01/neurips-2021-tutorials/), and forward-referencing them.
 
 [Statistical Rethinking | Richard McElreath](https://xcelab.net/rm/statistical-rethinking/) has gone viral as an introduction to some of this stuff.
+It is [available for CSIRO people for free](https://learning.oreilly.com/library/view/statistical-rethinking-2nd/9780429639142/).
 There is a 
 [PyMC3](https://github.com/gbosquechacon/statrethink_course_in_pymc3)
 [and a numpyro](https://github.com/asuagar/statrethink-course-in-numpyro/)
