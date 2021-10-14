@@ -2,14 +2,22 @@
 
 ## references
 
-* https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers
-* https://robsalomone.com/course-deep-probabilistic-models/
-* https://databricks.com/blog/2021/06/29/using-bayesian-hierarchical-models-to-infer-the-disease-parameters-of-covid-19.html
 
-Cheng recommends keeping an eye on NeurIPS tutorials, and forward referencing them. See
-https://blog.neurips.cc/2021/06/01/neurips-2021-tutorials/
+* [Bayes for Hackers](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)
+* [Rob’s course](https://robsalomone.com/course-deep-probabilistic-models/) is nice and he has given us permission to use it if we credit him. - see also https://slides.com/robsal/autodiff/#/70
+* a neat [databricks example](https://databricks.com/blog/2021/06/29/using-bayesian-hierarchical-models-to-infer-the-disease-parameters-of-covid-19.html)
+
+Cheng recommends keeping an eye on [NeurIPS tutorials](https://blog.neurips.cc/2021/06/01/neurips-2021-tutorials/), and forward-referencing them.
+
+[Statistical Rethinking | Richard McElreath](https://xcelab.net/rm/statistical-rethinking/) has gone viral as an introduction to some of this stuff.
+There is a 
+[PyMC3](https://github.com/gbosquechacon/statrethink_course_in_pymc3)
+[and a numpyro](https://github.com/asuagar/statrethink-course-in-numpyro/)
+version.
 
 ## setup
+
+For something different, we’ve set up the dependencies using [poetry](https://python-poetry.org/docs/master/basic-usage/):
 
 ```bash
 ## macos/linux
