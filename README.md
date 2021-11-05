@@ -19,21 +19,18 @@ Further references:
 
 * [that ppl guide](https://arxiv.org/abs/1809.10756) that Cheng found.
 
-## setup
+## Setup
 
-For something different, we’ve set up the dependencies using [poetry](https://python-poetry.org/docs/master/basic-usage/):
 
-```bash
-## macos/linux
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python3 -
-```
 
-```powershell
-## windows
-(Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py -UseBasicParsing).Content | python -
-```
+## links discussed
 
-```bash
-poetry install
-poetry shell
-```
+* [Kalman Filter — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/ekf.html)
+* [Example: Sequential Monte Carlo Filtering — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/smcfilter.html)
+* [Example: Inference with Markov Chain Monte Carlo — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/mcmc.html)
+* [Example: analyzing baseball stats with MCMC — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/baseball.html)
+* [Mini-Pyro — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/minipyro.html)
+* [Example: analyzing baseball stats with MCMC — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/baseball.html)
+* [Example: Inference with Markov Chain Monte Carlo — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/mcmc.html)
+* [Example: Sequential Monte Carlo Filtering — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/smcfilter.html)
+* [Example: hierarchical mixed-effect hidden Markov models — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/mixed_hmm.html)
