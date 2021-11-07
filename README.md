@@ -21,6 +21,22 @@ Further references:
 
 ## Setup
 
+Local:
+
+```bash
+python3 -m venv --prompt hackfest-ppl ./venv
+source ./venv/bin/activate
+pip install -r requirements.txt
+```
+
+HPC (not yet tested)
+
+```bash
+module add pytorch/1.9.0-py39-cuda112-mpi torchvision/0.10.0-py39
+python3 -m venv --prompt hackfest-ppl --system-site-packages ./venv
+pip install -r requirements.txt
+```
+
 
 
 ## links discussed

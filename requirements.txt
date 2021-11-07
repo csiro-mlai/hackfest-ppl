@@ -1,0 +1,12 @@
+
+# --------- pytorch --------- #
+torch>=1.9.0
+torchvision~=0.11.0
+pyro-ppl~=1.7.0
+torchmetrics~=0.6.0
+
+# --------- others --------- #
+python-dotenv   # loading env variables from .env file
+scikit-learn    # misc ML helpers
+seaborn         # plotting
+jupyterlab      # better jupyter notebooks
