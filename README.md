@@ -1,4 +1,4 @@
-# hackfest-probabilistic-programming
+# hackfest-ppl
 
 ## references
 
@@ -21,7 +21,15 @@ Further references:
 
 ## Setup
 
-Local:
+This step should work for everyone:
+
+```bash
+git clone https://github.com/csiro-mlai/hackfest-ppl
+cd hackfest-ppl
+```
+
+Now, install the requirements.
+Local desktop (not tested on windows)
 
 ```bash
 python3 -m venv --prompt hackfest-ppl ./venv
@@ -36,8 +44,6 @@ module add pytorch/1.9.0-py39-cuda112-mpi torchvision/0.10.0-py39
 python3 -m venv --prompt hackfest-ppl --system-site-packages ./venv
 pip install -r requirements.txt
 ```
-
-
 
 ## links discussed
 
