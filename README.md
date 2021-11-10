@@ -40,19 +40,16 @@ pip install -r requirements.txt
 HPC (not yet tested)
 
 ```bash
-module add pytorch/1.9.0-py39-cuda112-mpi torchvision/0.10.0-py39
+module add pytorch/1.9.0-py39-cuda112-mpi torchvision/0.10.0-py39 hdf5/1.12.0-mpi
 python3 -m venv --prompt hackfest-ppl --system-site-packages ./venv
 pip install -r requirements.txt
 ```
 
 ## links discussed
 
-* [Kalman Filter — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/ekf.html)
-* [Example: Sequential Monte Carlo Filtering — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/smcfilter.html)
-* [Example: Inference with Markov Chain Monte Carlo — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/mcmc.html)
-* [Example: analyzing baseball stats with MCMC — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/baseball.html)
-* [Mini-Pyro — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/minipyro.html)
-* [Example: analyzing baseball stats with MCMC — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/baseball.html)
-* [Example: Inference with Markov Chain Monte Carlo — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/mcmc.html)
-* [Example: Sequential Monte Carlo Filtering — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/smcfilter.html)
-* [Example: hierarchical mixed-effect hidden Markov models — Pyro Tutorials 1.7.0 documentation](http://pyro.ai/examples/mixed_hmm.html)
+* [Example: analyzing baseball stats with MCMC](http://pyro.ai/examples/baseball.html)
+* [Example: hierarchical mixed-effect hidden Markov models](http://pyro.ai/examples/mixed_hmm.html)
+* [Example: Inference with Markov Chain Monte Carlo](http://pyro.ai/examples/mcmc.html)
+* [Example: Sequential Monte Carlo Filtering](http://pyro.ai/examples/smcfilter.html)
+* [Example: Kalman Filter](http://pyro.ai/examples/ekf.html)
+* [Mini-Pyro](http://pyro.ai/examples/minipyro.html)
