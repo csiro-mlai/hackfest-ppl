@@ -123,11 +123,6 @@ class SimpleBlock2dGeneric(nn.Module):
         self.dim_sizes = dim_sizes
         self.pos_low = pos_low
         self.pos_high = pos_high
-        self.freq_base = freq_base
-        self.max_freq = max_freq
-        self.num_freq_bands = num_freq_bands
-        self.use_position = use_position
-        self.use_phase_position = use_phase_position
         self.n_history = n_history
         self.latent = latent
         self.forcing = forcing
@@ -159,7 +154,7 @@ class SimpleBlock2dGeneric(nn.Module):
             nn.Linear(128, 1))
 
     def forward(self, batch):
-        #batch is a dict of 'x', 'forcing' etc
+        # batch is a dict of 'x', 'latent'
         # x.shape == latent.shape == [n_batches, *dim_sizes, input_size]
         x = self._build_features(batch)
         x = self.in_proj(x)
@@ -172,16 +167,10 @@ class SimpleBlock2dGeneric(nn.Module):
         }
 
     def _encode_positions(self):
-        # TODO: this should be a cached parameterization
-        # https://pytorch.org/tutorials/intermediate/parametrizations.html
         return encode_positions(
             dim_sizes=self.dim_sizes,
             pos_low=self.pos_low,
             pos_high=self.pos_high,
-            use_phase_position=self.use_phase_position,
-            max_freq=self.max_freq,
-            num_freq_bands=self.num_freq_bands,
-            freq_base = self.freq_base,
             device=self._float.device)
 
     def _build_features(self, batch):
@@ -197,9 +186,8 @@ class SimpleBlock2dGeneric(nn.Module):
         # data.shape == [batch_size, *dim_sizes]
 
         # batch['x'].shape == [batch_size, x_dim, y_dim, n_history]
-        # batch['forcing'].shape == [batch_size, x_dim, y_dim, in_channels]
         # batch['latent'].shape == [batch_size, x_dim, y_dim]
-        # batch['param'].shape == [1]
+
         B, *dim_sizes, T = batch['x'].shape
         m, n = dim_sizes
 
@@ -207,22 +195,12 @@ class SimpleBlock2dGeneric(nn.Module):
         if self.latent:
             x.append(rearrange(batch['latent'], 'b m n -> b m n 1'))
 
-        if self.forcing:
-            x.append(batch['forcing'])
+        pos_feats = self._encode_positions()
+        # pos_feats.shape == [*dim_sizes, pos_size]
+        pos_feats = repeat(pos_feats, '... -> b ...', b=B)
+        # pos_feats.shape == [batch_size, *dim_sizes, n_dims]
 
-        if self.param:
-            mu = repeat(batch['param'], 'b -> b m n 1', m=m, n=n)
-            x.append(mu)
+        x.append(pos_feats)
 
-        if self.use_position:
-            pos_feats = self._encode_positions()
-            # pos_feats.shape == [*dim_sizes, pos_size]
-
-            pos_feats = repeat(pos_feats, '... -> b ...', b=B)
-            # pos_feats.shape == [batch_size, *dim_sizes, n_dims]
-
-            x.append(pos_feats)
-
-        # x = self.normalizer(x)
         return torch.cat(x, dim=-1)
         # xx.shape == [batch_size, *dim_sizes, self.input_dum]
