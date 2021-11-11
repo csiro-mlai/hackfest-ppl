@@ -1,7 +1,7 @@
 """
 Reference code for point estimates by predictive error minimisation.
 
-Currently keeping it around so that we can use some of the classes here but I think we can keep this most;ly in a notebook.
+Currently keeping it around so that we can use some of the classes here but I think we can keep this mostly in a notebook.
 """
 
 from typing import Any, Dict, Tuple, Optional
