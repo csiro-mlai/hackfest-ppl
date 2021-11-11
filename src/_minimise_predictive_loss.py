@@ -1,9 +1,11 @@
 """
-An experiment to do inference on a network with possibly-inhomogenous conditions.
+Reference code for point estimates by predictive error minimisation.
+
+Currently keeping it around so that we can use some of the classes here but I think we can keep this most;ly in a notebook.
 """
 
 from typing import Any, Dict, Tuple, Optional
-from math import ceil, sqrt
+from math import sqrt
 
 import torch
 from torch.nn.modules.loss import MSELoss
@@ -15,13 +17,14 @@ from torch.optim import AdamW
 
 from .fourier_2d_generic import SimpleBlock2dGeneric
 from .datamodules.navier_stokes_h5 import NavierStokesH5InstDatastore
+from .utils import resolve_path
 from torch.linalg import vector_norm, matrix_norm
 
 
 class Fourier2dMapping(nn.Module):
     """
-    This should represent the latent layers in frequency space but the input is not in fact on the complex half-plane when it is applied as a parameterization so that does not work
-    https://pytorch.org/tutorials/intermediate/parametrizations.html#intializing-parametrizations
+    Does not work because I tried to do something fancy with parameterizations.
+    TODO.
     """
 
     def __init__(self, modes: int=20, dims: Tuple[int, int]=(256,256)):
