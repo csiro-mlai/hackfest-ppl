@@ -189,9 +189,6 @@ class SimpleBlock2dGeneric(nn.Module):
         feature builder for scalar forcing and latent fields
         Takes a dict of state, latent, forcing params and builds a stacked array with position information baked in.
         """
-        # Both FNO classic and Alasdair's improvement pack the history of the sequence into the LAST axis, which no-one else does in time series (although the metaphor that previous time steps are features is not crazy).
-        # I do not know which is better from a memory layout perspective, but switching between them is probably not ideal.
-
         # We need to repack this so that the in_channels consists of the first n_history time steps
         # and  positional encodings and forcings and the latents and viscosity,
         # where the latents and the positional encodings are shared over time but

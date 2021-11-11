@@ -69,14 +69,7 @@ def multi_heatmap(arrs, names, range=None, base_size=3.0, dpi=100):
         im = ax.imshow(arr, interpolation='bilinear', norm=norm, cmap=cmap)
         ims.append(im)
 
-    # divider = make_axes_locatable(fig)
-    # cax = divider.append_axes('right', size='5%', pad=0.05)
     fig.colorbar(ims[0], ax=axs, orientation='vertical', shrink = 0.6)
     # fig.tight_layout()
     return fig
 
-
-def log_navier_stokes_heatmap(expt, vals, name, range=None):
-    fig = navier_stokes_heatmap(vals, name, range=range)
-    expt.log({f'{name}': wandb.Image(fig)})
-    plt.close('all')

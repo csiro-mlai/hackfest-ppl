@@ -3,7 +3,6 @@ import os
 import glob
 
 
-
 def resolve_path(path, unique=True):
     """
     Resolve a path that may contain variables and user home directory references and globs.

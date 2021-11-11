@@ -9,10 +9,8 @@ from math import sqrt
 
 import torch
 from torch.nn.modules.loss import MSELoss
-import torch.nn.utils.parametrize as parametrize
 import torch.fft as fft
 import torch.nn as nn
-from einops import rearrange, repeat
 from torch.optim import AdamW
 
 from .fourier_2d_generic import SimpleBlock2dGeneric
