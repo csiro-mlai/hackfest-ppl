@@ -1,9 +1,10 @@
 
 # --------- pytorch --------- #
-torch>=1.9.0
+torch~=1.10.0
 torchvision~=0.11.0
 pyro-ppl~=1.7.0
 torchmetrics~=0.6.0
+pytorch_lightning=~1.5.0   # only for DataModules. Ditch?
 
 # --------- others --------- #
 python-dotenv   # loading env variables from .env file
@@ -13,3 +14,4 @@ jupyterlab      # better jupyter notebooks
 wheel           # Eases installation of some deps
 einops~=0.3.0   # Eases operations on tensors
 matplotlib      # plotting
+h5py~=3.5.0     # Saving and loading of hdf5 files
