@@ -123,11 +123,16 @@ class SimpleBlock2dGeneric(nn.Module):
         self.dim_sizes = dim_sizes
         self.pos_low = pos_low
         self.pos_high = pos_high
-        self.n_history = n_history
-        self.latent = latent
-        self.forcing = forcing
-        self.param = param
-        self.n_horizon = n_horizon
+        self.freq_base = freq_base  # unused
+        self.max_freq = max_freq  # unused
+        self.num_freq_bands = num_freq_bands  # unused
+        self.use_position = use_position # unused
+        self.use_phase_position = use_phase_position  # unused
+        self.n_history = n_history 
+        self.latent = latent 
+        self.forcing = forcing  # unused
+        self.param = param  # unused
+        self.n_horizon = n_horizon  # unused
         self.register_buffer('_float', torch.FloatTensor([0.1]))
 
         self.input_dim = (
