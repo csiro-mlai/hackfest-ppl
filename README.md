@@ -40,7 +40,7 @@ pip install -r requirements.txt
 HPC (not yet tested)
 
 ```bash
-module add pytorch/1.9.0-py39-cuda112-mpi torchvision/0.10.0-py39 hdf5/1.12.0-mpi
+module add pytorch/1.10.0-py39-cuda112  torchvision/0.10.0-py39 hdf5/1.12.0-mpi
 python3 -m venv --prompt hackfest-ppl --system-site-packages ./venv
 pip install -r requirements.txt
 ```
