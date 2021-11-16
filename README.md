@@ -28,4 +28,9 @@ pip install -r requirements.txt
 
 ## Now what?
 
-Run the notebooks.
+```text
+probabilistic_programming_background.ipynb — introductory material
+primitives/ — tutorial on basic operations in pyron
+operator_inversion/ — advanced example using a neural network
+…
+```
