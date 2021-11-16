@@ -1,6 +1,5 @@
 # hackfest-ppl
 
-Date: 2021-11-17T09:52:42+11:00
 Authors:
 - Tom Blau
 - [Dan MacKinlay](http://danmackinlay.name)
@@ -8,6 +7,12 @@ Authors:
 - …
 
 Welcome to the CSIRO MLAI-FSP probabilistic programming hackfest notes.
+
+## Schedule
+
+Date: 22-23/11/2021
+
+…
 
 ## Install dependencies
 
