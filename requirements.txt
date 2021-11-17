@@ -6,11 +6,12 @@ pyro-ppl~=1.7.0
 torchmetrics~=0.6.0
 
 # --------- others --------- #
-python-dotenv   # loading env variables from .env file
-scikit-learn    # misc ML helpers
-seaborn         # plotting
-jupyterlab      # better jupyter notebooks
-wheel           # Eases installation of some deps
-einops~=0.3.0   # Eases operations on tensors
-matplotlib      # plotting
-h5py~=3.5.0     # Saving and loading of hdf5 files
+python-dotenv     # loading env variables from .env file
+scikit-learn      # misc ML helpers
+seaborn           # plotting
+jupyterlab        # better jupyter notebooks
+wheel             # Eases installation of some deps
+einops~=0.3.0     # Eases operations on tensors
+matplotlib        # plotting
+h5py~=3.5.0       # Saving and loading of hdf5 files
+graphviz~=0.18.2  # Plotting graphical models
