@@ -44,9 +44,9 @@ apt install graphviz   # Debian/ubuntu/WSL default
 # etc
 ```
 
-[Windows is complicated](https://forum.graphviz.org/t/new-simplified-installation-procedure-on-windows/224).
+[Windows is complicated](https://forum.graphviz.org/t/new-simplified-installation-procedure-on-windows/224) so once again, use WSL.
 
-HPC (not yet tested) in the IM&T-recommended configuration:
+HPC in the IM&T-recommended configuration:
 
 ```bash
 module add pytorch/1.10.0-py39-cuda112  torchvision/0.10.0-py39 hdf5/1.12.0-mpi graphviz
@@ -55,6 +55,7 @@ pip install -r requirements.txt
 ```
 
 OK, you are good to go!
+
 ## Now what?
 
 Various notebooks walk you through different stages of the hackfest.
