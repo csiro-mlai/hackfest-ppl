@@ -1,4 +1,4 @@
-# hackfest-ppl
+# 🎰🎰🎰 hackfest-ppl 🎰🎰🎰
 
 Authors:
 - Tom Blau
@@ -6,13 +6,18 @@ Authors:
 - Abdelwahed Khamis
 - …
 
-Welcome to the CSIRO MLAI-FSP probabilistic programming hackfest notes.
+Welcome to the CSIRO MLAI-FSP probabilistic programming hackfest notes!
+Here you will learn how to combine modern tools of neural networks and deep learning etc, with (approximate) Bayesian reasoning, uncertainty analysis and realted techniques.
+Does this solve all the problems? No.
+But we argue that this provides access to more of on the pareto front trading off flexibility and computational efficiency.
+
+Advanced case studies include experiment design, partial differential equations and whatever else you wish to bring to the party.
 
 ## Schedule
 
 Date: 22-23/11/2021
 
-…
+🚧🚧🚧
 
 ## Install dependencies
 
