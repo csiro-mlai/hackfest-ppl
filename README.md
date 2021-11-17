@@ -1,11 +1,5 @@
 # 🎰🎰🎰 hackfest-ppl 🎰🎰🎰
 
-Authors:
-- Tom Blau
-- [Dan MacKinlay](http://danmackinlay.name)
-- Abdelwahed Khamis
-- …
-
 Welcome to the CSIRO MLAI-FSP probabilistic programming hackfest notes!
 Here you will learn how to combine modern tools of neural networks and deep learning etc, with (approximate) Bayesian reasoning, uncertainty analysis and realted techniques.
 Does this solve all the problems? No.
@@ -71,3 +65,10 @@ primitives/ — tutorial on basic operations in pyron
 operator_inversion/ — advanced example using a neural network
 …
 ```
+
+## Authors
+
+- Tom Blau
+- [Dan MacKinlay](http://danmackinlay.name)
+- Abdelwahed Khamis
+- …
