@@ -7,6 +7,8 @@ But we argue that this provides access to more of on the pareto front trading of
 
 Advanced case studies include experiment design, partial differential equations and whatever else you wish to bring to the party.
 
+![](operator_inversion/fno_forward_predict_sheet.jpg)
+
 ## Schedule
 
 Date: 22-23/11/2021
