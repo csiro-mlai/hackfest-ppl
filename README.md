@@ -25,23 +25,24 @@ cd hackfest-ppl
 ```
 
 Now, install the requirements.
-Local desktop.
+Local desktop:
+
 ```bash
 python3 -m venv --prompt hackfest-ppl ./venv
 source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
-This shoudl work for Linux, macos, or Windows Susbystem for Linux. 
+This should work for Linux, macos, or Windows Susbystem for Linux. 
 For windows native, you are on your own good luck.
 
 If you wish to additionally visualize graphical models, you need graphviz.
 Depending on your platform this will be something like
 
 ```bash
-brew install graphviz  # MacOS with homebrew
-conda install graphviz # anaconda
-apt install graphviz   # Debian/ubuntu/WSL default
+brew install graphviz       # MacOS with homebrew
+conda install graphviz      # anaconda
+sudo apt install graphviz   # Debian/ubuntu/WSL default
 # etc
 ```
 
