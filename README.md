@@ -67,5 +67,8 @@ operator_inversion/ — advanced example using a neural network
 
 - Tom Blau
 - [Dan MacKinlay](http://danmackinlay.name)
+
+With input from
+
 - Abdelwahed Khamis
 - Xuhui Fan
