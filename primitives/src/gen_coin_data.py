@@ -6,7 +6,7 @@ import csv
 import random
 
 
-def gen_coin_tosses(n=1000, fairness=0.6, seed=11):
+def gen_coin_tosses(n=100, fairness=0.6, seed=11):
     """
     Generate coin tosses with a given fairness.
     """
