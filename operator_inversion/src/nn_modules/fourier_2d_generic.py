@@ -197,6 +197,7 @@ class SimpleBlock2dGeneric(nn.Module):
         m, n = dim_sizes
 
         x = [batch['x']]
+
         if self.latent:
             x.append(rearrange(batch['latent'], 'b m n -> b m n 1'))
 
@@ -204,8 +205,6 @@ class SimpleBlock2dGeneric(nn.Module):
         # pos_feats.shape == [*dim_sizes, pos_size]
         pos_feats = repeat(pos_feats, '... -> b ...', b=B)
         # pos_feats.shape == [batch_size, *dim_sizes, n_dims]
-
         x.append(pos_feats)
-
         return torch.cat(x, dim=-1)
         # xx.shape == [batch_size, *dim_sizes, self.input_dum]
