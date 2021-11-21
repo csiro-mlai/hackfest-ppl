@@ -58,9 +58,17 @@ Various notebooks walk you through different stages of the hackfest.
 
 ```text
 probabilistic_programming_background.ipynb — introductory material
-primitives/ — tutorial on basic operations in pyron
+primitives/ — tutorial on basic operations in pyro
 operator_inversion/ — advanced example using a neural network
 …
+```
+
+## Developing this notebook?
+
+To keep the storage small(er) we strip out all the notebooks using [nbstripout](https://github.com/kynan/nbstripout):
+
+```bash
+nbstripout --install --attributes .gitattributes
 ```
 
 ## Authors
