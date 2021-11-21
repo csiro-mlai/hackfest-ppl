@@ -9,6 +9,18 @@ Advanced case studies include experiment design, partial differential equations 
 
 ![](operator_inversion/fno_forward_predict_sheet.jpg)
 
+
+## Now what?
+
+Various notebooks walk you through different stages of the hackfest.
+
+```text
+probabilistic_programming_background.ipynb — introductory material
+primitives/ — tutorial on basic operations in pyro
+operator_inversion/ — advanced example using a neural network
+…
+```
+
 ## Install dependencies
 
 This step should work for everyone:
@@ -42,6 +54,8 @@ sudo apt install graphviz   # Debian/ubuntu/WSL default
 
 [Graphviz on Windows is complicated](https://forum.graphviz.org/t/new-simplified-installation-procedure-on-windows/224) so once again, use WSL.
 
+### Bonus: HPC setup
+
 HPC in the IM&T-recommended configuration:
 
 ```bash
@@ -50,21 +64,15 @@ python3 -m venv --prompt hackfest-ppl --system-site-packages ./venv
 pip install -r requirements.txt
 ```
 
-OK, you are good to go!
+That did not work for me (could not lead torch), so did a brute-force upgrade
 
-## Now what?
-
-Various notebooks walk you through different stages of the hackfest.
-
-```text
-probabilistic_programming_background.ipynb — introductory material
-primitives/ — tutorial on basic operations in pyro
-operator_inversion/ — advanced example using a neural network
-…
+```bash
+pip3 install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 ```
 
-## Developing this notebook?
+### Developer setup
 
+If you want to contribute back tot his repository, please do.
 To keep the storage small(er) we strip out all the notebooks using [nbstripout](https://github.com/kynan/nbstripout):
 
 ```bash
