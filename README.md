@@ -40,7 +40,7 @@ sudo apt install graphviz   # Debian/ubuntu/WSL default
 # etc
 ```
 
-[Windows is complicated](https://forum.graphviz.org/t/new-simplified-installation-procedure-on-windows/224) so once again, use WSL.
+[Graphviz on Windows is complicated](https://forum.graphviz.org/t/new-simplified-installation-procedure-on-windows/224) so once again, use WSL.
 
 HPC in the IM&T-recommended configuration:
 

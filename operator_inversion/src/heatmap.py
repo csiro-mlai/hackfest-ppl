@@ -3,8 +3,10 @@ import numpy as np
 from matplotlib.colors import Normalize
 
 
-def multi_heatmap(arrs, names, range=None, base_size=3.0, dpi=100):
+def multi_heatmap(arrs, names=None, range=None, base_size=3.0, dpi=100):
     n_ims = len(arrs)
+    if names is None:
+        names = range(n_ims)
     fig, axs = plt.subplots(1, n_ims, figsize=(base_size*n_ims, base_size), dpi=dpi)
     if range is None:
         vmax = max([np.abs(arr).max() for arr in arrs])
