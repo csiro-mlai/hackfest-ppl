@@ -45,7 +45,7 @@ def coin_graph_plate(n):
     g.attr('node', shape='circle')
     g.node('fairness')
     with g.subgraph(name='cluster_1') as c:
-        c.attr(color='black', label=str(n))
+        c.attr(color='black', label=str(n), labelloc="b")
         c.node('toss', style='filled') 
     g.edge('fairness', 'toss')
     return g
