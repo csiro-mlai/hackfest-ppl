@@ -14,3 +14,4 @@ einops~=0.3.0     # Eases operations on tensors
 matplotlib        # plotting
 h5py~=3.1.0       # Saving and loading of hdf5 files (no longer needed?)
 graphviz~=0.18.2  # Plotting graphical models
+lxml
