@@ -18,6 +18,7 @@ Various notebooks walk you through different stages of the hackfest.
 probabilistic_programming_background.ipynb — introductory material
 primitives/ — tutorial on basic operations in pyro
 operator_inversion/ — advanced example using a neural network
+variational_inference/ — inferring the posteriors of complex stochastic models
 …
 ```
 
@@ -72,7 +73,7 @@ pip3 install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu
 
 ### Developer setup
 
-If you want to contribute back tot his repository, please do.
+If you want to contribute back to this repository, please do.
 To keep the storage small(er) we strip out all the notebooks using [nbstripout](https://github.com/kynan/nbstripout):
 
 ```bash
