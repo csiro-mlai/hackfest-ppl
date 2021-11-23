@@ -10,6 +10,19 @@ Advanced case studies include experiment design, partial differential equations 
 ![](operator_inversion/fno_forward_predict_sheet.jpg)
 
 
+## Authors
+
+- [Tom Blau](https://github.com/singulaire)
+- [Dan MacKinlay](https://danmackinlay.name)
+
+With input from
+
+- Abdelwahed Khamis
+- [Xuhui Fan](https://xuhuifan.github.io/)
+- [Petra Kuhnert](https://people.csiro.au/K/P/Petra-Kuhnert)
+
+
+
 ## Now what?
 
 Various notebooks walk you through different stages of the hackfest.
@@ -19,12 +32,12 @@ probabilistic_programming_background.ipynb — introductory material
 primitives/ — tutorial on basic operations in pyro
 operator_inversion/ — advanced example using a neural network
 variational_inference/ — inferring the posteriors of complex stochastic models
-…
+exercises/ — some exercises to get you started
 ```
 
 ## Install dependencies
 
-This step should work for everyone:
+This step should work for Tuses on Linux, Macos, or Windows users via the free [Windows Subsystem for Linux (WSL)](https://danmackinlay.name/notebook/wsl.html):
 
 ```bash
 git clone https://github.com/csiro-mlai/hackfest-ppl
@@ -40,8 +53,7 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
-This should work for Linux, macos, or [Windows Subsystem for Linux](https://danmackinlay.name/notebook/wsl.html) (WSL). 
-For Windows WITHOUT WSL, see [below for an alternative (which, to be clear, is more complicated that installing the free Windows Subsystem for Linux).
+For Windows WITHOUT WSL, see below for an alternative (which, to be clear, is more complicated that installing the free Windows Subsystem for Linux).
 
 If you wish to additionally visualize graphical models, you need graphviz.
 Depending on your platform this will be something like
@@ -53,23 +65,16 @@ sudo apt install graphviz   # Debian/ubuntu/WSL default
 # etc
 ```
 
+This step is optional and none of the actual computation requires graphviz, which is purely for visualisation.
 
-### Bonus: HPC setup
+## Developer setup
 
-HPC in the IM&T-recommended configuration:
-
-```bash
-module add pytorch/1.10.0-py39-cuda112  torchvision/0.10.0-py39 hdf5/1.12.0-mpi graphviz
-python3 -m venv --prompt hackfest-ppl --system-site-packages ./venv
-pip install -r requirements.txt
-```
-
-That did not work for me (could not `import torch`), so I did a brute-force upgrade to the current CUDa version of pytorch.
+If you want to contribute back to this repository, please do.
+To keep the storage small(er) we strip out all the notebooks using [nbstripout](https://github.com/kynan/nbstripout):
 
 ```bash
-pip3 install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+nbstripout --install --attributes .gitattributes
 ```
-
 
 ### Windows Setup without WSL {#windows-setup}
 
@@ -151,23 +156,3 @@ Then start a jupyter notebook and away you go. Evoila!
 To Start a Jupyter Notebook in a specific directory, see this [blog](https://www.dev2qa.com/how-to-start-jupyter-notebook-in-anaconda-python-virtual-environment/) which
 amounts to running this code: `jupyter notebook`
 
-
-## Developer setup
-
-If you want to contribute back to this repository, please do.
-To keep the storage small(er) we strip out all the notebooks using [nbstripout](https://github.com/kynan/nbstripout):
-
-```bash
-nbstripout --install --attributes .gitattributes
-```
-
-## Authors
-
-- [Tom Blau](https://github.com/singulaire)
-- [Dan MacKinlay](https://danmackinlay.name)
-
-With input from
-
-- Abdelwahed Khamis
-- [Xuhui Fan](https://xuhuifan.github.io/)
-- [Petra Kuhnert](https://people.csiro.au/K/P/Petra-Kuhnert)
