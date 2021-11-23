@@ -37,7 +37,8 @@ exercises/ — some exercises to get you started
 
 ## Install dependencies
 
-This step should work for Tuses on Linux, Macos, or Windows users via the free [Windows Subsystem for Linux (WSL)](https://danmackinlay.name/notebook/wsl.html):
+This step should work for users on Linux, Macos.
+It should also work for Windows users via the free Microsoft extension, [Windows Subsystem for Linux (WSL)](https://danmackinlay.name/notebook/wsl.html):
 
 ```bash
 git clone https://github.com/csiro-mlai/hackfest-ppl
@@ -53,10 +54,10 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
-For Windows WITHOUT WSL, see below for an alternative (which, to be clear, is more complicated that installing the free Windows Subsystem for Linux).
+For Windows users who do NOT wish to installthe free  WSL, see below for an alternative.
 
-If you wish to additionally visualize graphical models, you need graphviz.
-Depending on your platform this will be something like
+If you wish to additionally visualize graphical models, you need the `graphviz` binary.
+Depending on your platform this will be something like:
 
 ```bash
 brew install graphviz       # MacOS with homebrew
