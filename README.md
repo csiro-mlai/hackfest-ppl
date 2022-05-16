@@ -1,4 +1,4 @@
-# 🎰🎰🎰 hackfest-ppl 🎰🎰🎰
+# 🎰🎰🎰 Probabilistic Programming hackfest 2021 🎰🎰🎰
 
 Welcome to the CSIRO MLAI-FSP probabilistic programming hackfest notes!
 Here you will learn how to combine modern tools of neural networks and deep learning etc, with (approximate) Bayesian reasoning, uncertainty analysis and realted techniques.
